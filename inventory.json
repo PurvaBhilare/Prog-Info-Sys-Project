@@ -148,6 +148,19 @@
       "supplierEmail": "samsung@gmail.com",
       "warranty": "",
       "lastUpdated": ""
+    },
+    {
+      "id": "PRD0012",
+      "name": "mobile",
+      "brand": "samsung",
+      "category": "",
+      "subCategory": "",
+      "price": "4673",
+      "stock": "30",
+      "supplier": "samsung",
+      "supplierEmail": "samsung@gmail.com",
+      "warranty": "",
+      "lastUpdated": ""
     }
   ]
 }
