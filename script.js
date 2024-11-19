@@ -37,8 +37,8 @@ window.onload = async () => {
     <td>${product.supplierEmail}</td>
     <td>${product.warranty}</td>
     <td>${product.lastUpdated}</td>
-    <td><button class="table-button-class edit-button" data-id="${product.id}><i id="edit-button" class="fa-solid fa-pen-to-square custom-icon-class"></i></button></td>
-    <td><button class="table-button-class delete-button" data-id="${product.id}><i class="fa-solid fa-trash custom-icon-class"></button></i></td>
+    <td><button class="table-button-class edit-button" data-id="${product.id}"><i id="edit-button" class="fa-solid fa-pen-to-square custom-icon-class"></i></button></td>
+    <td><button class="table-button-class delete-button" data-id="${product.id}"><i class="fa-solid fa-trash custom-icon-class"></button></i></td>
     </tr>`;
   });
   document.querySelector(".table-body").innerHTML = rows;
@@ -58,16 +58,17 @@ async function editSelectedRecord(prodId) {
   console.log("In Edit Selected Record prod id :", prodId);
   const allProds = await fetchData("http://localhost:3000/products");
   console.log("All prods : ", allProds);
-  const selectedProd = allProds.find((prod) => {
-    prod.id === prodId;
+  let selectedProd = allProds.find((prod) => {
+    return prod.id === prodId;
   });
+  console.log(`Selected Prod : ${selectedProd}`);
   if (selectedProd) {
     document.querySelector("#prod-name").value = selectedProd.name;
     document.querySelector("#prod-brand").value = selectedProd.brand;
     document.querySelector("#prod-category").value = selectedProd.category;
     document.querySelector("#prod-subcategory").value =
       selectedProd.subCategory;
-    document.querySelector("#prod-price").value = price;
+    document.querySelector("#prod-price").value = selectedProd.price;
     document.querySelector("#prod-total-stock").value = selectedProd.stock;
     document.querySelector("#prod-supplier").value = selectedProd.supplier;
     document.querySelector("#prod-supplier-email").value =
