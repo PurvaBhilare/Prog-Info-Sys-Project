@@ -81,6 +81,24 @@ async function editSelectedRecord(prodId) {
     document.querySelector(".add-inv-form-class").style.display = "flex";
     document.querySelector("#submit-button").style.display = "none";
     const updateBtn = document.querySelector("#update-button");
+    updateBtn.style.display = "block";
+    updateBtn.disabled = true;
+    updateBtn.style.backgroundColor = "rgb(227, 160, 160)";
+    const invUpdatedForm = document.querySelector("#add-inv-form");
+    invUpdatedForm.addEventListener("input", () => {
+      const name = document.querySelector("#prod-name").value;
+      const brand = document.querySelector("#prod-brand").value;
+      const price = document.querySelector("#prod-price").value;
+      const stock = document.querySelector("#prod-total-stock").value;
+      const supplier = document.querySelector("#prod-supplier").value;
+      const supplierEmail = document.querySelector(
+        "#prod-supplier-email"
+      ).value;
+      if (name && brand && price && stock && supplier && supplierEmail) {
+        updateBtn.disabled = false;
+        updateBtn.style.backgroundColor = "red";
+      }
+    });
     updateBtn.addEventListener("click", (e) => updateChosenRecord(e, prodId));
   }
 }
@@ -124,6 +142,7 @@ function popAddForm() {
   console.log("Inside popAddForm");
   console.log("form class: ", addInvFormClass);
   document.querySelector(".table-container").style.display = "none";
+  document.querySelector("#update-button").style.display = "none";
   addInvFormClass.style.display = "flex";
 
   const submitButton = document.querySelector("#submit-button");

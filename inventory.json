@@ -42,32 +42,30 @@
       "lastUpdated": "2024-11-04"
     },
     {
-      "id": "PRD004",
       "name": "Dell XPS 15",
       "brand": "Dell",
       "category": "Laptops",
       "subCategory": "Ultrabooks",
-      "price": 2499.99,
-      "stock": 25,
+      "price": "2499.99",
+      "stock": "25",
       "supplier": "Dell Technologies",
       "supplierEmail": "dell@gmail.com",
       "warranty": "1 Year Manufacturer Warranty",
-      "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
-      "lastUpdated": "2024-11-04"
+      "lastUpdated": "2024-11-04",
+      "id": "PRD004"
     },
     {
-      "id": "PRD005",
-      "name": "Dell XPS 15",
+      "name": "Dell Gaming Laptop",
       "brand": "Dell",
       "category": "Laptops",
-      "subCategory": "Ultrabooks",
-      "price": 2499.99,
-      "stock": 25,
-      "supplier": "Dell Technologies",
+      "subCategory": "Ultra",
+      "price": "2500",
+      "stock": "25",
+      "supplier": "Dell",
       "supplierEmail": "dell@gmail.com",
       "warranty": "1 Year Manufacturer Warranty",
-      "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
-      "lastUpdated": "2024-11-04"
+      "lastUpdated": "2024-11-04",
+      "id": "PRD005"
     },
     {
       "id": "PRD006",
@@ -84,17 +82,17 @@
       "lastUpdated": "2024-11-04"
     },
     {
-      "id": "PRD007",
       "name": "TV",
       "brand": "Sony",
-      "category": "",
-      "subCategory": "",
-      "price": "4673",
+      "category": "3D",
+      "subCategory": "Sony Ultra",
+      "price": "5000",
       "stock": "30",
       "supplier": "Sony",
       "supplierEmail": "sony1234.gmail.com",
-      "warranty": "",
-      "lastUpdated": ""
+      "warranty": "2 years",
+      "lastUpdated": "",
+      "id": "PRD007"
     }
   ]
 }

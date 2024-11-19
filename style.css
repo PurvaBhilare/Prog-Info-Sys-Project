@@ -143,7 +143,7 @@ body {
 #update-button {
   width: 80px;
   height: 30px;
-  background-color: rgb(227, 160, 160);
+  background-color: red;
   cursor: pointer;
   letter-spacing: 2px;
   border-radius: 2px;
