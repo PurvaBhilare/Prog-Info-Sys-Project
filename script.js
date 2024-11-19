@@ -57,6 +57,22 @@ function popAddForm() {
   addInvFormClass.style.display = "flex";
 
   const submitButton = document.querySelector("#submit-button");
+  submitButton.disabled = true;
+
+  const invForm = document.querySelector("#add-inv-form");
+  invForm.addEventListener("input", () => {
+    const name = document.querySelector("#prod-name").value;
+    const brand = document.querySelector("#prod-brand").value;
+    const price = document.querySelector("#prod-price").value;
+    const stock = document.querySelector("#prod-total-stock").value;
+    const supplier = document.querySelector("#prod-supplier").value;
+    const supplierEmail = document.querySelector("#prod-supplier-email").value;
+    if (name && brand && price && stock && supplier && supplierEmail) {
+      submitButton.disabled = false;
+      submitButton.style.backgroundColor = "red";
+    }
+  });
+
   submitButton.addEventListener("click", (e) => submitNewInv(e));
   window.onload();
 }

@@ -14,7 +14,7 @@
     <div class="div" class="container">
       <div class="header-class">
         <div class="logo-class">
-          <img src="./images/inventory-logo.png" id="logo" />
+          <img src="./utils/inventory-logo.png" id="logo" />
         </div>
         <div class="links-class">
           <a href="" id="home">Home</a>
@@ -27,13 +27,27 @@
       </div>
       <form class="add-inv-form-class" id="add-inv-form">
         <div class="name-class label-input-class">
-          <label for="prod-name" class="add-inv-form-labels">Name : </label>
-          <input class="add-inv-form-inputs" id="prod-name" />
+          <label for="prod-name" class="add-inv-form-labels"
+            ><su class="star">*</su>Name :
+          </label>
+          <input
+            class="add-inv-form-inputs"
+            id="prod-name"
+            type="text"
+            required
+          />
         </div>
         <!-- Test Commit -->
         <div class="brand-class label-input-class">
-          <label for="prod-brand" class="add-inv-form-labels">Brand : </label>
-          <input type="text" class="add-inv-form-inputs" id="prod-brand" />
+          <label for="prod-brand" class="add-inv-form-labels"
+            ><sup class="star">*</sup>Brand :
+          </label>
+          <input
+            type="text"
+            class="add-inv-form-inputs"
+            id="prod-brand"
+            type="text"
+          />
         </div>
 
         <div class="category-class label-input-class">
@@ -55,13 +69,15 @@
         </div>
 
         <div class="price-class label-input-class">
-          <label for="prod-price" class="add-inv-form-labels">Price : </label>
+          <label for="prod-price" class="add-inv-form-labels"
+            ><sup class="star">*</sup>Price :
+          </label>
           <input type="text" class="add-inv-form-inputs" id="prod-price" />
         </div>
 
         <div class="totalstock-class label-input-class">
           <label for="prod-total-stock" class="add-inv-form-labels"
-            >Total Stock :
+            ><sup class="star">*</sup>Total Stock :
           </label>
           <input
             type="text"
@@ -72,14 +88,14 @@
 
         <div class="supplier-class label-input-class">
           <label for="prod-supplier" class="add-inv-form-labels"
-            >Supplier :
+            ><sup class="star">*</sup>Supplier :
           </label>
           <input type="text" class="add-inv-form-inputs" id="prod-supplier" />
         </div>
 
         <div class="supplier-email-class label-input-class">
           <label for="prod-supplier-email" class="add-inv-form-labels"
-            >Supplier Email :
+            ><sup class="star">*</sup>Supplier Email :
           </label>
           <input
             type="text"
