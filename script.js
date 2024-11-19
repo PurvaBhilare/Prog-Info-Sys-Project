@@ -37,13 +37,30 @@ window.onload = async () => {
     <td>${product.supplierEmail}</td>
     <td>${product.warranty}</td>
     <td>${product.lastUpdated}</td>
-    <td><button class="table-button-class"><i id="edit-button" class="fa-solid fa-pen-to-square custom-icon-class"></i></button></td>
-    <td><button class="table-button-class"><i class="fa-solid fa-trash custom-icon-class"></button></i></td>
+    <td><button class="table-button-class edit-button data-id="${product.id}"><i id="edit-button" class="fa-solid fa-pen-to-square custom-icon-class"></i></button></td>
+    <td><button class="table-button-class delete-button data-id="${product.id}"><i class="fa-solid fa-trash custom-icon-class"></button></i></td>
     </tr>`;
   });
   document.querySelector(".table-body").innerHTML = rows;
   document.querySelector(".products-table").style.tableLayout = "fixed";
+
+  const editButtons = document.querySelectorAll(".edit-button");
+  console.log("Edit buttons are : ", editButtons);
+  editButtons.forEach((editButton) => {
+    editButton.addEventListener("click", () => {
+      editSelectedRecord(editButton.dataset.id);
+    });
+  });
 };
+
+async function editSelectedRecord(prodId) {
+  console.log("In Edit Selected Record");
+  const allProds = await fetchData("http://localhost:3000/products");
+  console.log("All prods : ", allProds);
+  const selectedProd = allProds.find((prod) => {
+    prod.id === prodId;
+  });
+}
 
 const addNewButton = document.querySelector("#add-new");
 addInvFormClass = document.querySelector(".add-inv-form-class");
