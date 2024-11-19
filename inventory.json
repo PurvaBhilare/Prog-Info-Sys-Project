@@ -1,18 +1,17 @@
 {
   "products": [
     {
-      "id": "PRD001",
       "name": "Dell XPS 15",
       "brand": "Dell",
       "category": "Laptops",
       "subCategory": "Ultrabooks",
-      "price": 2499.99,
-      "stock": 25,
+      "price": "2499.99",
+      "stock": "25",
       "supplier": "Dell Technologies",
       "supplierEmail": "dell@gmail.com",
       "warranty": "1 Year Manufacturer Warranty",
-      "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
-      "lastUpdated": "2024-11-04"
+      "lastUpdated": "2024-11-04",
+      "id": "PRD001"
     },
     {
       "id": "PRD002",
@@ -83,6 +82,19 @@
       "warranty": "1 Year Manufacturer Warranty",
       "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
       "lastUpdated": "2024-11-04"
+    },
+    {
+      "id": "PRD007",
+      "name": "TV",
+      "brand": "Sony",
+      "category": "",
+      "subCategory": "",
+      "price": "4673",
+      "stock": "30",
+      "supplier": "Sony",
+      "supplierEmail": "sony1234.gmail.com",
+      "warranty": "",
+      "lastUpdated": ""
     }
   ]
 }

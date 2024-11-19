@@ -136,6 +136,20 @@ body {
   color: white;
 }
 
+.update-button-class {
+  margin-left: 100px;
+}
+
+#update-button {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(227, 160, 160);
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+}
 .change-to-red {
   background-color: red;
 }

@@ -61,7 +61,7 @@ async function editSelectedRecord(prodId) {
   let selectedProd = allProds.find((prod) => {
     return prod.id === prodId;
   });
-  console.log(`Selected Prod : ${selectedProd}`);
+  console.log("Selected Prod :", selectedProd);
   if (selectedProd) {
     document.querySelector("#prod-name").value = selectedProd.name;
     document.querySelector("#prod-brand").value = selectedProd.brand;
@@ -79,6 +79,39 @@ async function editSelectedRecord(prodId) {
 
     document.querySelector(".table-container").style.display = "none";
     document.querySelector(".add-inv-form-class").style.display = "flex";
+    document.querySelector("#submit-button").style.display = "none";
+    const updateBtn = document.querySelector("#update-button");
+    updateBtn.addEventListener("click", (e) => updateChosenRecord(e, prodId));
+  }
+}
+
+async function updateChosenRecord(e, prodId) {
+  console.log("Inside update chosen record prodId is : ", prodId);
+  e.preventDefault();
+  const updatedInventory = {
+    name: document.querySelector("#prod-name").value,
+    brand: document.querySelector("#prod-brand").value,
+    category: document.querySelector("#prod-category").value,
+    subCategory: document.querySelector("#prod-subcategory").value,
+    price: document.querySelector("#prod-price").value,
+    stock: document.querySelector("#prod-total-stock").value,
+    supplier: document.querySelector("#prod-supplier").value,
+    supplierEmail: document.querySelector("#prod-supplier-email").value,
+    warranty: document.querySelector("#prod-warranty").value,
+    lastUpdated: document.querySelector("#prod-last-updated").value,
+  };
+  try {
+    const response = await fetch(`http://localhost:3000/products/${prodId}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedInventory),
+    });
+
+    if (response.ok) {
+      console.log("record updated");
+    }
+  } catch (error) {
+    console.log(`Error occured when updating record: ${error}`);
   }
 }
 
