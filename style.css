@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-class {
+  background-color: red;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-class {
+  margin-left: 15px;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 3px;
+}
+
+.links-class a {
+  color: white;
+  margin: 5px;
+}
+
+.add-inv-button-class {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#add-new {
+  width: 10%;
+  height: 40px;
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#add-new:hover {
+  background-color: rgb(228, 31, 31);
+}
+
+.add-inv-form-class {
+  display: none;
+  flex-direction: column;
+  /* align-items: center; */
+  align-content: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-left: 300px;
+  margin-bottom: 5px;
+  width: 50%;
+  flex-wrap: wrap;
+  height: 500px;
+  background-color: rgb(223, 220, 220);
+  z-index: 5;
+}
+
+.label-input-class {
+  margin-bottom: 20px;
+}
+
+/* .add-inv-form-labels {
+  margin-right: 8px;
+}*/
+
+/* .add-inv-form-inputs {
+  margin-left: 100px;
+} */
+
+#prod-name {
+  margin-left: 90px;
+}
+#prod-brand {
+  margin-left: 90px;
+}
+#prod-category {
+  margin-left: 72px;
+}
+#prod-subcategory {
+  margin-left: 41px;
+}
+#prod-price {
+  margin-left: 95px;
+}
+#prod-total-stock {
+  margin-left: 56px;
+}
+#prod-supplier {
+  margin-left: 75px;
+}
+#prod-warranty {
+  margin-left: 72px;
+}
+#prod-last-updated {
+  margin-left: 45px;
+}
+#prod-supplier-email {
+  margin-left: 32px;
+}
+
+.submit-button-class {
+  margin-left: 100px;
+}
+
+#submit-button {
+  width: 80px;
+  height: 30px;
+  background-color: red;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+}
+.products-table {
+  border: 1px solid rgb(180, 180, 180);
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 98%;
+  text-align: center;
+  margin: 10px;
+}
+
+.table-container .products-table thead tr th {
+  text-align: center;
+  border: 1px solid rgb(180, 180, 180);
+  height: 40px;
+}
+
+.table-container .products-table tbody tr td {
+  border: 1px solid rgb(180, 180, 180);
+  height: 40px;
+}
+
+.products-table tbody tr:nth-child(odd) {
+  background-color: rgb(245, 242, 242);
+}
+
+.table-button-class {
+  z-index: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.table-button-class:hover {
+  transform: scale(1.2);
+  transition: o.5 ease-in;
+}
+
+.custom-icon-class {
+  font-size: 20px;
+}
