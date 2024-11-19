@@ -4,7 +4,17 @@ async function fetchData() {
   return inv;
 }
 
+function useTodaysDate() {
+  const date = new Date().toISOString().split("T");
+  const today = date[0];
+  const lastUpdatedInput = document.querySelector("#prod-last-updated");
+  lastUpdatedInput.setAttribute("min", today);
+  lastUpdatedInput.setAttribute("max", today);
+  lastUpdatedInput.value = today;
+}
+
 window.onload = async () => {
+  useTodaysDate();
   const products = await fetchData();
   console.log("Products : ", JSON.stringify(products));
   let rows = "";
