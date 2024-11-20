@@ -80,6 +80,32 @@
       "warranty": "1 Year Manufacturer Warranty",
       "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
       "lastUpdated": "2024-11-04"
+    },
+    {
+      "id": "PRD007",
+      "name": "mobile",
+      "brand": "apple",
+      "category": "",
+      "subCategory": "",
+      "price": "4673.9876",
+      "stock": "25",
+      "supplier": "apple",
+      "supplierEmail": "apple@gmail.com",
+      "warranty": "2 years",
+      "lastUpdated": "2024-11-20"
+    },
+    {
+      "id": "PRD008",
+      "name": "mobile",
+      "brand": "Sony",
+      "category": "",
+      "subCategory": "",
+      "price": "-3",
+      "stock": "24",
+      "supplier": "Sony",
+      "supplierEmail": "sony1234.gmail.com",
+      "warranty": "",
+      "lastUpdated": "2024-11-20"
     }
   ]
 }
