@@ -62,6 +62,13 @@ window.onload = async () => {
       console.log(`dataset is : ${editButton.dataset.id}`);
     });
   });
+
+  const deleteButtons = document.querySelectorAll(".delete-button");
+  deleteButtons.forEach((deleteButton) => {
+    deleteButton.addEventListener("click", () => {
+      deletSelectedRecord(deleteButton.dataset.id);
+    });
+  });
 };
 
 async function editSelectedRecord(prodId) {
@@ -110,6 +117,22 @@ async function editSelectedRecord(prodId) {
       }
     });
     updateBtn.addEventListener("click", (e) => updateChosenRecord(e, prodId));
+  }
+}
+
+async function deletSelectedRecord(prodId) {
+  const confirmRes = confirm(`Are you sure you want to delete ${prodId}`);
+  if (confirmRes === true) {
+    try {
+      const res = await fetch(`http://localhost:3000/products/${prodId}`, {
+        method: "DELETE",
+      });
+      if (res.ok) {
+        alert("Record deleted successfully");
+      }
+    } catch (error) {
+      console.log(`Error ${error} occurred when deleting the record`);
+    }
   }
 }
 
