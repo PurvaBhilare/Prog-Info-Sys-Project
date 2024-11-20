@@ -93,19 +93,6 @@
       "supplierEmail": "apple@gmail.com",
       "warranty": "2 years",
       "lastUpdated": "2024-11-20"
-    },
-    {
-      "id": "PRD008",
-      "name": "mobile",
-      "brand": "Sony",
-      "category": "",
-      "subCategory": "",
-      "price": "-3",
-      "stock": "24",
-      "supplier": "Sony",
-      "supplierEmail": "sony1234.gmail.com",
-      "warranty": "",
-      "lastUpdated": "2024-11-20"
     }
   ]
 }
