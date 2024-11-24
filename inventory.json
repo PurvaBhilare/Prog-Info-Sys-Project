@@ -14,18 +14,17 @@
       "id": "PRD001"
     },
     {
-      "id": "PRD002",
       "name": "Lenovo Laptop",
       "brand": "Lenovo",
       "category": "Laptops",
-      "subCategory": "",
-      "price": 2000,
-      "stock": 10,
+      "subCategory": "Ultrabooks",
+      "price": "2000",
+      "stock": "5",
       "supplier": "Lenovo Technologies",
       "supplierEmail": "lenovo@gmail.com",
       "warranty": "1 Year",
-      "description": "High-performance laptop with 12th Gen Intel Core",
-      "lastUpdated": "2024-11-01"
+      "lastUpdated": "2024-11-01",
+      "id": "PRD002"
     },
     {
       "id": "PRD003",
