@@ -15,17 +15,17 @@
     },
     {
       "id": "PRD002",
-      "name": "Dell XPS 15",
-      "brand": "Dell",
+      "name": "Lenovo Laptop",
+      "brand": "Lenovo",
       "category": "Laptops",
-      "subCategory": "Ultrabooks",
-      "price": 2499.99,
-      "stock": 25,
-      "supplier": "Dell Technologies",
-      "supplierEmail": "dell@gmail.com",
-      "warranty": "1 Year Manufacturer Warranty",
-      "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
-      "lastUpdated": "2024-11-04"
+      "subCategory": "",
+      "price": 2000,
+      "stock": 10,
+      "supplier": "Lenovo Technologies",
+      "supplierEmail": "lenovo@gmail.com",
+      "warranty": "1 Year",
+      "description": "High-performance laptop with 12th Gen Intel Core",
+      "lastUpdated": "2024-11-01"
     },
     {
       "id": "PRD003",
@@ -93,6 +93,32 @@
       "supplierEmail": "apple@gmail.com",
       "warranty": "2 years",
       "lastUpdated": "2024-11-20"
+    },
+    {
+      "id": "PRD008",
+      "name": "TV",
+      "brand": "Sony",
+      "category": "Galaxy",
+      "subCategory": "60 inches",
+      "price": "2499.99",
+      "stock": "25",
+      "supplier": "Sony",
+      "supplierEmail": "sony1234.gmail.com",
+      "warranty": "3 years",
+      "lastUpdated": "2024-11-23"
+    },
+    {
+      "name": "mobile",
+      "brand": "samsung",
+      "category": "",
+      "subCategory": "",
+      "price": "4673",
+      "stock": "30",
+      "supplier": "samsung",
+      "supplierEmail": "dhbjdkvbdj.com",
+      "warranty": "",
+      "lastUpdated": "2024-11-24",
+      "id": "PRD009"
     }
   ]
 }
