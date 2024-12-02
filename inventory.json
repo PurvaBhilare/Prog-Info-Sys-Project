@@ -62,7 +62,7 @@
       "stock": "25",
       "supplier": "Dell",
       "supplierEmail": "dell@gmail.com",
-      "warranty": "1 Year Manufacturer Warranty",
+      "warranty": "1 Year",
       "lastUpdated": "2024-11-04",
       "id": "PRD005"
     },
@@ -76,7 +76,7 @@
       "stock": 25,
       "supplier": "Dell Technologies",
       "supplierEmail": "dell@gmail.com",
-      "warranty": "1",
+      "warranty": "1 Year",
       "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
       "lastUpdated": "2024-11-04"
     },
