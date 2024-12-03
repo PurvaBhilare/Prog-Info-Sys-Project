@@ -39,6 +39,8 @@ body {
 
 #home {
   font-size: large;
+  margin-right: 30px;
+  letter-spacing: 2px;
 }
 
 .links-class a {
