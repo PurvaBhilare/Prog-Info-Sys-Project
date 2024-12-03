@@ -55,7 +55,7 @@ window.onload = async () => {
   document.querySelector(".products-table").style.tableLayout = "fixed";
 
   const searchButton = document.querySelector("#search-button");
-  searchButton.addEventListener("click", () => {
+  searchButton.addEventListener("click", (e) => {
     searchProduct();
   });
 
@@ -81,9 +81,62 @@ window.onload = async () => {
     let searchValue = document.querySelector("#search-input").value;
     let lowerSearchValue = searchValue.toLowerCase();
     let filteredProducts = products.filter((product) => {
-      product.name.toLowerCase() == lowerSearchValue;
+      return product.name.toLowerCase().includes(lowerSearchValue);
     });
-    console.log(`Filtered Prods : ${filteredProducts}`);
+    console.log("Filtered Prods :", JSON.stringify(filteredProducts));
+
+    // Display the filtered products in table
+    heading = `<tr>
+    <th class="heading-col">ProductId</th>
+    <th class="heading-col">Name</th>
+    <th class="heading-col">Brand</th>
+    <th class="heading-col">Category</th>
+    <th class="heading-col">SubCategory</th>
+    <th class="heading-col">Price</th>
+    <th class="heading-col">Total Stock</th>
+    <th class="heading-col">Supplier</th>
+    <th class="heading-col">Supplier Email</th>
+    <th class="heading-col">Warranty</th>
+    <th class="heading-col">Last Updated</th>
+  </tr>`;
+    document.querySelector(".products-table thead").innerHTML = heading;
+    rows = "";
+    filteredProducts.forEach((product) => {
+      console.log(`id : ${product.id}`);
+      rows += `<tr>
+    <td>${product.id}</td>
+    <td>${product.name}</td>
+    <td>${product.brand}</td>
+    <td>${product.category}</td>
+    <td>${product.subCategory}</td>
+    <td>${product.price}</td>
+    <td>${product.stock}</td>
+    <td>${product.supplier}</td>
+    <td>${product.supplierEmail}</td>
+    <td>${product.warranty}</td>
+    <td>${product.lastUpdated}</td>
+    <td><button class="table-button-class edit-button" data-id="${product.id}"><i id="edit-button" class="fa-solid fa-pen-to-square custom-icon-class"></i></button></td>
+    <td><button class="table-button-class delete-button" data-id="${product.id}"><i class="fa-solid fa-trash custom-icon-class"></button></i></td>
+    </tr>`;
+    });
+    document.querySelector(".table-body").innerHTML = rows;
+    document.querySelector(".products-table").style.tableLayout = "fixed";
+    const editButtons = document.querySelectorAll(".edit-button");
+    //Edit button
+    editButtons.forEach((editButton) => {
+      editButton.addEventListener("click", () => {
+        editSelectedRecord(editButton.dataset.id);
+        console.log(`dataset is : ${editButton.dataset.id}`);
+      });
+    });
+
+    //Delete Button
+    const deleteButtons = document.querySelectorAll(".delete-button");
+    deleteButtons.forEach((deleteButton) => {
+      deleteButton.addEventListener("click", () => {
+        deletSelectedRecord(deleteButton.dataset.id);
+      });
+    });
   }
 };
 

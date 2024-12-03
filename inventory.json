@@ -14,19 +14,6 @@
       "id": "PRD001"
     },
     {
-      "name": "Lenovo Laptop",
-      "brand": "Lenovo",
-      "category": "Laptops",
-      "subCategory": "Netbooks",
-      "price": "2000",
-      "stock": "5",
-      "supplier": "Lenovo Technologies",
-      "supplierEmail": "lenovo@gmail.com",
-      "warranty": "1 Year",
-      "lastUpdated": "2024-11-01",
-      "id": "PRD002"
-    },
-    {
       "id": "PRD003",
       "name": "Google Pixel Tablet",
       "brand": "Google",
@@ -105,6 +92,19 @@
       "supplierEmail": "sony1234.gmail.com",
       "warranty": "3 years",
       "lastUpdated": "2024-11-23"
+    },
+    {
+      "id": "PRD009",
+      "name": "mobile",
+      "brand": "samsung",
+      "category": "",
+      "subCategory": "",
+      "price": "100",
+      "stock": "5",
+      "supplier": "samsung",
+      "supplierEmail": "samsung@gmail.com",
+      "warranty": "",
+      "lastUpdated": "2024-12-03"
     }
   ]
 }
