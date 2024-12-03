@@ -105,19 +105,6 @@
       "supplierEmail": "sony1234.gmail.com",
       "warranty": "3 years",
       "lastUpdated": "2024-11-23"
-    },
-    {
-      "name": "mobile",
-      "brand": "samsung",
-      "category": "",
-      "subCategory": "",
-      "price": "4673",
-      "stock": "30",
-      "supplier": "samsung",
-      "supplierEmail": "dhbjdkvbdj.com",
-      "warranty": "",
-      "lastUpdated": "2024-11-24",
-      "id": "PRD009"
     }
   ]
 }

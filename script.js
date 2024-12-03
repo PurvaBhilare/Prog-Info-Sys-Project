@@ -54,6 +54,11 @@ window.onload = async () => {
   document.querySelector(".table-body").innerHTML = rows;
   document.querySelector(".products-table").style.tableLayout = "fixed";
 
+  const searchButton = document.querySelector("#search-button");
+  searchButton.addEventListener("click", () => {
+    searchProduct();
+  });
+
   const editButtons = document.querySelectorAll(".edit-button");
   console.log("Edit buttons are : ", editButtons);
   editButtons.forEach((editButton) => {
@@ -69,6 +74,17 @@ window.onload = async () => {
       deletSelectedRecord(deleteButton.dataset.id);
     });
   });
+
+  function searchProduct() {
+    console.log("Inside searchProduct");
+    console.log("Products are:", JSON.stringify(products));
+    let searchValue = document.querySelector("#search-input").value;
+    let lowerSearchValue = searchValue.toLowerCase();
+    let filteredProducts = products.filter((product) => {
+      product.name.toLowerCase() == lowerSearchValue;
+    });
+    console.log(`Filtered Prods : ${filteredProducts}`);
+  }
 };
 
 async function editSelectedRecord(prodId) {

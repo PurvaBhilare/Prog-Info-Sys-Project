@@ -32,9 +32,33 @@ body {
   border-radius: 3px;
 }
 
+#inv-heading {
+  color: white;
+  margin-left: 350px;
+}
+
+#home {
+  font-size: large;
+}
+
 .links-class a {
   color: white;
   margin: 5px;
+}
+
+.search-div {
+  margin-left: 90px;
+}
+
+#search-input {
+  height: 20px;
+}
+
+#search-button {
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+  height: 20px;
 }
 
 .add-inv-button-class {
