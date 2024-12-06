@@ -94,17 +94,17 @@
       "lastUpdated": "2024-11-23"
     },
     {
-      "id": "PRD009",
       "name": "mobile",
       "brand": "samsung",
-      "category": "",
+      "category": "20 series",
       "subCategory": "",
       "price": "100",
       "stock": "5",
       "supplier": "samsung",
       "supplierEmail": "samsung@gmail.com",
-      "warranty": "",
-      "lastUpdated": "2024-12-03"
+      "warranty": "2 years",
+      "lastUpdated": "2024-12-03",
+      "id": "PRD009"
     }
   ]
 }
