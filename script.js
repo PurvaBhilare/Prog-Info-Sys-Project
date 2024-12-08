@@ -236,7 +236,7 @@ async function updateChosenRecord(e, prodId) {
 }
 
 const addNewButton = document.querySelector("#add-new");
-addInvFormClass = document.querySelector(".add-inv-form-class");
+const addInvFormClass = document.querySelector(".add-inv-form-class");
 console.log("form class:", addInvFormClass);
 addNewButton.addEventListener("click", popAddForm);
 

@@ -54,70 +54,31 @@
       "id": "PRD005"
     },
     {
-      "id": "PRD006",
-      "name": "Dell XPS 15",
-      "brand": "Dell",
-      "category": "Laptops",
-      "subCategory": "Ultrabooks",
-      "price": 2499.99,
-      "stock": 25,
+      "name": "ipad",
+      "brand": "apple",
+      "category": "256GB RAM",
+      "subCategory": "",
+      "price": 15,
+      "stock": 10,
       "supplier": "Dell Technologies",
       "supplierEmail": "dell@gmail.com",
       "warranty": "1 Year",
-      "description": "High-performance laptop with 12th Gen Intel Core i9 and 4K OLED display.",
-      "lastUpdated": "2024-11-04"
+      "description": "High-performance ipad",
+      "lastUpdated": "2024-12-08",
+      "id": "PRD006"
     },
     {
       "id": "PRD007",
-      "name": "mobile",
-      "brand": "apple",
+      "name": "Dell Gaming Laptop",
+      "brand": "Dell",
       "category": "",
       "subCategory": "",
-      "price": "4673.9876",
-      "stock": "25",
-      "supplier": "apple",
-      "supplierEmail": "apple@gmail.com",
-      "warranty": "2 years",
-      "lastUpdated": "2024-11-20"
-    },
-    {
-      "id": "PRD008",
-      "name": "TV",
-      "brand": "Sony",
-      "category": "Galaxy",
-      "subCategory": "60 inches",
-      "price": "2499.99",
+      "price": "4673",
       "stock": "25",
       "supplier": "Sony",
       "supplierEmail": "sony1234.gmail.com",
-      "warranty": "3 years",
-      "lastUpdated": "2024-11-23"
-    },
-    {
-      "name": "mobile",
-      "brand": "samsung",
-      "category": "20 series",
-      "subCategory": "",
-      "price": "100",
-      "stock": "5",
-      "supplier": "samsung",
-      "supplierEmail": "samsung@gmail.com",
-      "warranty": "2 years",
-      "lastUpdated": "2024-12-03",
-      "id": "PRD009"
-    },
-    {
-      "id": "PRD0010",
-      "name": "JBL Headphones",
-      "brand": "JBL",
-      "category": "bluetooth",
-      "subCategory": "",
-      "price": "150.00",
-      "stock": "30",
-      "supplier": "Horizon Tech",
-      "supplierEmail": "horizontech@gmail.com",
       "warranty": "1 Year",
-      "lastUpdated": "2024-12-07"
+      "lastUpdated": "2024-12-08"
     }
   ]
 }
