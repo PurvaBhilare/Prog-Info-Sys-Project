@@ -105,6 +105,19 @@
       "warranty": "2 years",
       "lastUpdated": "2024-12-03",
       "id": "PRD009"
+    },
+    {
+      "id": "PRD0010",
+      "name": "JBL Headphones",
+      "brand": "JBL",
+      "category": "bluetooth",
+      "subCategory": "",
+      "price": "150.00",
+      "stock": "30",
+      "supplier": "Horizon Tech",
+      "supplierEmail": "horizontech@gmail.com",
+      "warranty": "1 Year",
+      "lastUpdated": "2024-12-07"
     }
   ]
 }
