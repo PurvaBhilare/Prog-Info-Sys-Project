@@ -21,8 +21,6 @@ describe("DOM in javascript file", () => {
       <input id="prod-supplier-email" />
       <button id="submit-button">Submit</button>
     `;
-
-    // Mock commonly used elements
     addNewRecordButton = document.querySelector("#add-new");
     addInvFormClass = document.querySelector(".add-inv-form-class");
   });
@@ -31,5 +29,14 @@ describe("DOM in javascript file", () => {
     jest.clearAllMocks();
     //Clearing the DOM
     document.body.innerHTML = "";
+  });
+
+  test("On clicking Addnew button popAddFormMethod is called", () => {
+    //First mock the function popAddForm()
+    const popAddForm = jest.fn();
+
+    addNewRecordButton.addEventListener("click", popAddForm);
+    addNewRecordButton.click();
+    expect(popAddForm).toHaveBeenCalled();
   });
 });
