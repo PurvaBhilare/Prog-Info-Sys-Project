@@ -1,10 +1,10 @@
-async function fetchData() {
+export async function fetchData() {
   const res = await fetch("http://localhost:3000/products");
   const inv = await res.json();
   return inv;
 }
 
-function useTodaysDate() {
+export function useTodaysDate() {
   const date = new Date().toISOString().split("T");
   const today = date[0];
   const lastUpdatedInput = document.querySelector("#prod-last-updated");
@@ -238,7 +238,9 @@ async function updateChosenRecord(e, prodId) {
 const addNewButton = document.querySelector("#add-new");
 const addInvFormClass = document.querySelector(".add-inv-form-class");
 console.log("form class:", addInvFormClass);
-addNewButton.addEventListener("click", popAddForm);
+if (addNewButton) {
+  addNewButton.addEventListener("click", popAddForm);
+}
 
 function popAddForm() {
   console.log("Inside popAddForm");
