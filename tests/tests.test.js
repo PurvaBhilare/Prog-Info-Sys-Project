@@ -1,4 +1,4 @@
-import { fetchData } from "../script";
+import { fetchData, deletSelectedRecord } from "../script";
 
 // Mocking fetch globally
 global.fetch = jest.fn();
@@ -54,6 +54,8 @@ describe("DOM in javascript file", () => {
   });
 }); //Describe for DOM ends here
 
+//Test usetodaysDate function
+
 //fetch Data
 describe("Fetch Data", () => {
   test("Fetch Inventory data", async () => {
@@ -86,3 +88,25 @@ describe("Fetch Data", () => {
     await expect(fetchData()).rejects.toThrow("Fetch has failed");
   });
 }); //Describe for fetch ends here
+
+describe("Testing delete API", () => {
+  beforeEach(() => {
+    global.confirm = jest.fn(); //Mocking confirm
+  });
+
+  test("call delete api when deletSelectedRecord is called", async () => {
+    const prodId = "PRD002";
+    global.confirm.mockReturnValueOnce(true);
+    fetch.mockResolvedValueOnce({ ok: true });
+    const deleteBtn = document.createElement("button");
+    deleteBtn.dataset.id = prodId;
+    deleteBtn.addEventListener("click", async () => {
+      await deletSelectedRecord(prodId);
+    });
+    await deleteBtn.click();
+    expect(fetch).toHaveBeenCalledWith(
+      `http://localhost:3000/products/${prodId}`,
+      { method: "DELETE" }
+    );
+  }); //test for delete ends here
+}); //Describe for testing API delete ends here

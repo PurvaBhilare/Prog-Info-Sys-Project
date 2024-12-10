@@ -189,7 +189,7 @@ async function editSelectedRecord(prodId) {
   }
 }
 
-async function deletSelectedRecord(prodId) {
+export async function deletSelectedRecord(prodId) {
   const confirmRes = confirm(`Are you sure you want to delete ${prodId}`);
   if (confirmRes === true) {
     try {
