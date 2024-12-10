@@ -39,4 +39,17 @@ describe("DOM in javascript file", () => {
     addNewRecordButton.click();
     expect(popAddForm).toHaveBeenCalled();
   });
-});
+
+  test("Inv form displayed when addNew button is clicked", () => {
+    addNewRecordButton.addEventListener("click", () => {
+      document.querySelector(".table-container").style.display = "none";
+      addInvFormClass.style.display = "flex";
+    });
+
+    addNewRecordButton.click();
+    expect(document.querySelector(".table-container").style.display).toBe(
+      "none"
+    );
+    expect(addInvFormClass.style.display).toBe("flex");
+  });
+}); //Describe for DOM ends here
