@@ -140,7 +140,7 @@ window.onload = async () => {
   }
 };
 
-async function editSelectedRecord(prodId) {
+export async function editSelectedRecord(prodId) {
   console.log("In Edit Selected Record prod id :", prodId);
   const allProds = await fetchData("http://localhost:3000/products");
   console.log("All prods : ", allProds);

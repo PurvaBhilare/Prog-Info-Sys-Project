@@ -54,8 +54,6 @@ describe("DOM in javascript file", () => {
   });
 }); //Describe for DOM ends here
 
-//Test usetodaysDate function
-
 //fetch Data
 describe("Fetch Data", () => {
   test("Fetch Inventory data", async () => {
