@@ -66,19 +66,6 @@
       "description": "High-performance ipad",
       "lastUpdated": "2024-12-08",
       "id": "PRD006"
-    },
-    {
-      "id": "PRD007",
-      "name": "Dell Gaming Laptop",
-      "brand": "Dell",
-      "category": "",
-      "subCategory": "",
-      "price": "4673",
-      "stock": "25",
-      "supplier": "Sony",
-      "supplierEmail": "sony1234.gmail.com",
-      "warranty": "1 Year",
-      "lastUpdated": "2024-12-08"
     }
   ]
 }
