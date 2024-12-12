@@ -1,8 +1,7 @@
 # Prog-Info-Sys-Project
 
-Assignment Cover Sheet
-Please fill out and insert at the top of your README or Google Doc as preferred.
-Student Name and Number as per student card:
+Student Name - Purva Bhilare
+Number as per student card - 20040706
 
 Programme: MSc in Information Systems with Computing
 
