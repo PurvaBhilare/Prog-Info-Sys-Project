@@ -2,14 +2,14 @@
   "products": [
     {
       "name": "Dell XPS 15",
-      "brand": "Dell",
+      "brand": "Dell tech",
       "category": "Laptops",
       "subCategory": "Ultrabooks",
       "price": "2499.99",
-      "stock": "25",
-      "supplier": "Dell Technologies",
+      "stock": "13",
+      "supplier": "Dell",
       "supplierEmail": "dell@gmail.com",
-      "warranty": "1 Year",
+      "warranty": "2 Years",
       "lastUpdated": "2024-11-04",
       "id": "PRD001"
     },
@@ -29,7 +29,7 @@
     },
     {
       "name": "OnePlus Nord 4",
-      "brand": "OnePlus",
+      "brand": "Hello World",
       "category": "Mobile",
       "subCategory": "Dual Camera",
       "price": "300",
